@@ -7,12 +7,13 @@
   <meta name="description" content="Alle Leistungen von Burger Sicherheitstechnik in Eichenau: Schließanlagen, Sicherheitsbeschläge, Türöffner & Türschließer, Briefkästen, Beschilderungen, Einbruchschutz sowie Reparaturservice & Montage.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/logo/logo-cropped.jpg">
 </head>
 <body>
 
 <header class="header">
   <div class="wrap header__inner">
-    <a href="index.html" class="brand"><span class="brand__mark">🔒</span><span>Burger<small>Sicherheitstechnik</small></span></a>
+    <a href="index.html" class="brand"><span class="brand__mark"><img src="img/logo/logo-cropped.jpg" alt="" width="40" height="40"></span><span>Burger<small>Sicherheitstechnik</small></span></a>
     <nav class="nav" id="nav">
       <a href="index.html">Home</a>
       <a href="ueber-uns.html">Über uns</a>
@@ -20,7 +21,7 @@
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <div class="header__cta">
-      <a href="tel:+4915150690229" class="phone"><span class="phone__ico">☎</span><span style="color:var(--blue-900);font-size:1rem;">0151 506 902 29</span></a>
+      <a href="tel:+4915150690229" class="phone"><span class="phone__ico"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-.14em"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg></span><span style="color:var(--blue-900);font-size:1rem;">0151 506 902 29</span></a>
       <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -36,19 +37,42 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="grid grid--3 reveal">
-      <div class="card"><div class="card__ico">🔑</div><h3>Schließanlagen</h3><p>Individuelle mechanische und mechatronische Schließsysteme für Haus, Wohnung und Gewerbe – mit durchdachtem Schließplan, damit ein Schlüssel genau so viel öffnet, wie er soll.</p></div>
-      <div class="card"><div class="card__ico">🛡️</div><h3>Sicherheitsbeschläge</h3><p>Geprüfte Schutzbeschläge für Haus- und Wohnungstüren, die das Aufhebeln und Kernziehen des Schließzylinders wirksam erschweren.</p></div>
-      <div class="card"><div class="card__ico">🚪</div><h3>Türöffner &amp; Türschließer</h3><p>Elektrische Türöffner und automatische Türschließer für mehr Komfort und Sicherheit – sauber eingestellt und zuverlässig im Betrieb.</p></div>
-      <div class="card"><div class="card__ico">📬</div><h3>Briefkastenanlagen</h3><p>Robuste Briefkasten- und Klingelanlagen für Ein- und Mehrfamilienhäuser – wetterfest, sauber montiert und langlebig.</p></div>
-      <div class="card"><div class="card__ico">🪧</div><h3>Beschilderungen</h3><p>Klingel-, Namens- und Hinweisschilder in sauberer Ausführung – passend zu Ihrer Anlage und gut lesbar.</p></div>
-      <div class="card"><div class="card__ico">🔒</div><h3>Einbruchschutz</h3><p>Nachrüstlösungen nach Bedarf: Zusatzschlösser, Querriegel, Bandsicherungen und mehr – damit Einbrecher an Ihrer Tür scheitern.</p></div>
+    <div class="grid grid--3 reveal-grid">
+      <div class="pcard">
+        <div class="pcard__media"><img src="img/produkte/schliessanlagen.jpg" alt="Schließzylinder mit Schlüssel und Schließplan" loading="lazy"></div>
+        <div class="pcard__body"><h3>Schließanlagen</h3><p>Individuelle mechanische und mechatronische Schließsysteme für Haus, Wohnung und Gewerbe – mit durchdachtem Schließplan, damit ein Schlüssel genau so viel öffnet, wie er soll.</p></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard__media"><img src="img/produkte/beschlaege.jpg" alt="Geprüfter Sicherheitsbeschlag an einer Tür" loading="lazy"></div>
+        <div class="pcard__body"><h3>Sicherheitsbeschläge</h3><p>Geprüfte Schutzbeschläge für Haus- und Wohnungstüren, die das Aufhebeln und Kernziehen des Schließzylinders wirksam erschweren.</p></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard__media"><img src="img/produkte/tueroeffner.jpg" alt="Elektrischer Türöffner" loading="lazy"></div>
+        <div class="pcard__body"><h3>Türöffner &amp; Türschließer</h3><p>Elektrische Türöffner und automatische Türschließer für mehr Komfort und Sicherheit – sauber eingestellt und zuverlässig im Betrieb.</p></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard__media"><img src="img/produkte/briefkaesten.jpg" alt="Briefkastenanlage" loading="lazy"></div>
+        <div class="pcard__body"><h3>Briefkastenanlagen</h3><p>Robuste Briefkasten- und Klingelanlagen für Ein- und Mehrfamilienhäuser – wetterfest, sauber montiert und langlebig.</p></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard__media"><img src="img/produkte/beschilderungen.jpg" alt="Klingel- und Namensschilder" loading="lazy"></div>
+        <div class="pcard__body"><h3>Beschilderungen</h3><p>Klingel-, Namens- und Hinweisschilder in sauberer Ausführung – passend zu Ihrer Anlage und gut lesbar.</p></div>
+      </div>
+      <div class="pcard">
+        <div class="pcard__media"><img src="img/produkte/einbruchschutz.jpg" alt="Einbruchschutz-Nachrüstung an einer Tür" loading="lazy"></div>
+        <div class="pcard__body"><h3>Einbruchschutz</h3><p>Nachrüstlösungen nach Bedarf: Zusatzschlösser, Querriegel, Bandsicherungen und mehr – damit Einbrecher an Ihrer Tür scheitern.</p></div>
+      </div>
     </div>
 
-    <div class="card reveal" style="margin-top:22px;border-color:var(--blue-100);background:var(--blue-050);">
-      <div class="card__ico">🔧</div>
-      <h3>Reparaturservice &amp; Montage</h3>
-      <p>Klemmende Tür, defektes Schloss, hakender Schließer? Ich repariere, warte und montiere fachgerecht – schnell, sauber und termintreu.</p>
+    <!-- Reparatur als hervorgehobenes Feature mit Bild -->
+    <div class="split reveal" style="margin-top:48px;align-items:center;">
+      <div class="split__media has-img"><img src="img/produkte/reparatur.jpg" alt="Reparaturservice und Montage an einer Tür" loading="lazy"></div>
+      <div>
+        <span class="eyebrow">Reparaturservice &amp; Montage</span>
+        <h2>Klemmt, hakt oder schließt nicht mehr?</h2>
+        <p class="lead">Klemmende Tür, defektes Schloss, hakender Schließer? Ich repariere, warte und montiere fachgerecht – schnell, sauber und termintreu.</p>
+        <p style="margin-top:22px;"><a href="kontakt.html" class="btn btn--primary">Reparatur anfragen</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -57,7 +81,7 @@
   <div class="wrap reveal">
     <h2>Nicht sicher, was Sie brauchen?</h2>
     <p class="lead" style="color:#cfdcf0;margin:0 auto 26px;">Kein Problem – rufen Sie an, ich berate Sie ehrlich und unverbindlich.</p>
-    <a href="tel:+4915150690229" class="btn btn--white btn--lg">☎ 0151 506 902 29</a>
+    <a href="tel:+4915150690229" class="btn btn--white btn--lg"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-.14em"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>0151 506 902 29</a>
     <a href="kontakt.html" class="btn btn--ghost btn--lg" style="color:#fff;border-color:rgba(255,255,255,.35);">Nachricht schreiben</a>
   </div>
 </section>
@@ -66,7 +90,7 @@
   <div class="wrap">
     <div class="footer__grid">
       <div>
-        <div class="footer__brand"><span class="brand__mark">🔒</span> Burger Sicherheitstechnik</div>
+        <div class="footer__brand"><img src="img/logo/logo.png" alt="Burger Sicherheitstechnik" style="height:60px;width:auto;"></div>
         <p>Tradition im Herzen. Sicherheit Zuhause.<br>Regional verwurzelt. Technisch stark.</p>
       </div>
       <div><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="leistungen.html">Leistungen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>

@@ -18,10 +18,55 @@
     });
   }
 
+  /* --- Header: kompakter Zustand beim Scrollen --- */
+  var header = document.querySelector('.header');
+  if (header) {
+    var onScroll = function () {
+      if (window.scrollY > 12) { header.classList.add('is-scrolled'); }
+      else { header.classList.remove('is-scrolled'); }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* --- Hero-Slideshow ---
+     Reines Crossfade mit Punkten. Auto-Play, Pause bei Hover,
+     stoppt sauber, falls nur 1 Slide oder das Tab im Hintergrund ist. */
+  var slider = document.querySelector('.hero-slider');
+  if (slider) {
+    var slides = Array.prototype.slice.call(slider.querySelectorAll('.hero-slider__slide'));
+    var dots = Array.prototype.slice.call(slider.querySelectorAll('.hero-slider__dots button'));
+    var current = 0;
+    var timer = null;
+    var DELAY = 6000;
+
+    var show = function (i) {
+      current = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) { s.classList.toggle('is-active', n === current); });
+      dots.forEach(function (d, n) { d.classList.toggle('is-active', n === current); });
+    };
+    var next = function () { show(current + 1); };
+    var start = function () { if (slides.length > 1 && !timer) { timer = setInterval(next, DELAY); } };
+    var stop = function () { if (timer) { clearInterval(timer); timer = null; } };
+
+    if (slides.length) {
+      show(0);
+      dots.forEach(function (d, n) {
+        d.addEventListener('click', function () { show(n); stop(); start(); });
+      });
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) { stop(); } else { start(); }
+      });
+      start();
+    }
+  }
+
   /* --- Reveal beim Scrollen ---
      Wichtig: Fällt sauber zurück. Wenn kein IntersectionObserver da ist,
      werden ALLE Elemente sofort sichtbar gemacht (nie "hängen bleiben"). */
-  var items = document.querySelectorAll('.reveal');
+  var items = document.querySelectorAll('.reveal, .reveal-grid');
   if (!('IntersectionObserver' in window) || !items.length) {
     items.forEach(function (el) { el.classList.add('is-in'); });
     return;
