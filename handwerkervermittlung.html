@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handwerkervermittlung – den passenden Partner finden | Burger Sicherheitstechnik</title>
+  <meta name="description" content="Handwerkervermittlung von Burger Sicherheitstechnik: Egal welche Leistung Sie benötigen – wir vermitteln Ihnen den passenden Handwerkspartner aus der Region. Jetzt unverbindlich Angebot anfragen.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/logo/logo-cropped.jpg">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a href="index.html" class="brand"><span class="brand__mark"><img src="img/logo/logo-cropped.jpg" alt="" width="40" height="40"></span><span>Burger<small>Sicherheitstechnik</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="handwerkervermittlung.html">Handwerkervermittlung</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header__cta">
+      <a href="tel:+4915150690229" class="phone"><span class="phone__ico"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-.14em"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg></span><span style="color:var(--blue-900);font-size:1rem;">0151 506 902 29</span></a>
+      <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="background:var(--blue-900);">
+  <div class="wrap" style="position:relative;padding:clamp(48px,7vw,80px) 0;">
+    <span class="eyebrow" style="color:#7fb0ee;">Handwerkervermittlung</span>
+    <h1 style="color:#fff;max-width:20ch;">Der passende Handwerker für jede Aufgabe</h1>
+    <p class="hero__lead">Egal welche Art von Leistung Sie benötigen – wir haben den passenden Partner. Sagen Sie uns kurz, worum es geht, und wir vermitteln Ihnen den richtigen Fachbetrieb aus unserem Netzwerk.</p>
+  </div>
+</section>
+
+<!-- Vorteile / Erklärung -->
+<section class="section">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">So funktioniert's</span>
+      <h2>Ein Ansprechpartner – für alle Gewerke</h2>
+      <p class="lead">Sie müssen nicht selbst zig Betriebe anfragen. Beschreiben Sie Ihr Anliegen, und wir bringen Sie mit einem verlässlichen Handwerkspartner zusammen – von Elektrik über Sanitär bis Garten.</p>
+    </div>
+    <div class="grid grid--3 reveal-grid" style="margin-top:44px;">
+      <div class="card"><h3>Großes Partnernetz</h3><p>Verlässliche Betriebe aus vielen Gewerken in Eichenau und Umgebung – für nahezu jede Aufgabe der passende Fachmann.</p></div>
+      <div class="card"><h3>Ein Anlaufpunkt</h3><p>Sie schildern Ihr Anliegen einmal – wir kümmern uns um die Vermittlung an den richtigen Partner.</p></div>
+      <div class="card"><h3>Unverbindlich</h3><p>Ihre Anfrage ist kostenlos und unverbindlich. Sie entscheiden in Ruhe, ob das Angebot passt.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Anfrage-Formular -->
+<section class="section section--soft">
+  <div class="wrap" style="max-width:720px;">
+    <div class="center reveal">
+      <span class="eyebrow">Anfrage</span>
+      <h2>Jetzt passenden Partner anfragen</h2>
+      <p class="lead" style="margin-left:auto;margin-right:auto;">Welche Leistung benötigen Sie? Beschreiben Sie Ihr Anliegen kurz – wir melden uns mit einem passenden Partner zurück.</p>
+    </div>
+
+    <form action="vermittlung.php" method="post" class="card reveal" style="display:grid;gap:16px;margin-top:32px;">
+      <label>Welche Leistung benötigen Sie?*<br>
+        <select name="leistung" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;background:#fff;">
+          <option value="" disabled selected>Bitte wählen …</option>
+          <option>Elektrik</option>
+          <option>Sanitär &amp; Installation</option>
+          <option>Heizung</option>
+          <option>Maler &amp; Lackierer</option>
+          <option>Fliesenleger</option>
+          <option>Bodenleger</option>
+          <option>Trockenbau</option>
+          <option>Dachdecker</option>
+          <option>Zimmerei &amp; Tischler</option>
+          <option>Garten- &amp; Landschaftsbau</option>
+          <option>Umzug &amp; Entrümpelung</option>
+          <option>Sicherheitstechnik</option>
+          <option>Sonstiges</option>
+        </select>
+      </label>
+
+      <label>Kurze Beschreibung Ihres Anliegens*<br>
+        <textarea name="nachricht" required rows="5" placeholder="Was soll gemacht werden? Wo und bis wann? Je mehr Details, desto passender die Vermittlung." style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;resize:vertical;"></textarea>
+      </label>
+
+      <label>Name*<br><input name="name" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;"></label>
+      <label>E-Mail*<br><input name="email" type="email" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;"></label>
+      <label>Telefon<br><input name="telefon" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;"></label>
+
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--ink-soft);">
+        <input type="checkbox" name="datenschutz" required style="margin-top:5px;">
+        <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.*</span>
+      </label>
+
+      <!-- Honeypot gegen Spam (für Menschen unsichtbar) -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true">
+
+      <button type="submit" class="btn btn--primary btn--lg" style="justify-content:center;">Jetzt Angebot anfragen</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section--blue cta-band">
+  <div class="wrap reveal">
+    <h2>Lieber direkt sprechen?</h2>
+    <p class="lead" style="color:#cfdcf0;margin:0 auto 26px;">Rufen Sie an – wir klären Ihr Anliegen und den passenden Partner am Telefon.</p>
+    <a href="tel:+4915150690229" class="btn btn--white btn--lg"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-.14em"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>0151 506 902 29</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><img src="img/logo/logo.png" alt="Burger Sicherheitstechnik" style="height:60px;width:auto;"></div>
+        <p>Tradition im Herzen. Sicherheit Zuhause.<br>Regional verwurzelt. Technisch stark.</p>
+      </div>
+      <div><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="leistungen.html">Leistungen</a></li><li><a href="handwerkervermittlung.html">Handwerkervermittlung</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li>Hauptstraße 56<br>82223 Eichenau</li><li><a href="tel:+4915150690229">0151 506 902 29</a></li><li><a href="mailto:info@burger-sicherheitstechnik.de">info@burger-sicherheitstechnik.de</a></li></ul></div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 Burger Sicherheitstechnik</span>
+      <span><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
