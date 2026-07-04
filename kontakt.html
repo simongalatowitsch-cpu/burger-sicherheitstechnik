@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt – Burger Sicherheitstechnik in Eichenau</title>
+  <meta name="description" content="Kontakt zu Burger Sicherheitstechnik in Eichenau: Telefon, E-Mail und Anschrift. Rufen Sie an für eine unverbindliche Beratung rund um Sicherheitstechnik.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a href="index.html" class="brand"><span class="brand__mark">🔒</span><span>Burger<small>Sicherheitstechnik</small></span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="header__cta">
+      <a href="tel:+4915150690229" class="phone"><span class="phone__ico">☎</span><span style="color:var(--blue-900);font-size:1rem;">0151 506 902 29</span></a>
+      <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="background:var(--blue-900);">
+  <div class="wrap" style="position:relative;padding:clamp(48px,7vw,80px) 0;">
+    <span class="eyebrow" style="color:#7fb0ee;">Kontakt</span>
+    <h1 style="color:#fff;max-width:16ch;">So erreichen Sie mich</h1>
+    <p class="hero__lead">Am schnellsten geht's per Telefon. Alternativ schreiben Sie mir – ich melde mich zeitnah zurück.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split" style="align-items:start;">
+    <!-- Direkte Kontaktwege -->
+    <div class="reveal">
+      <h2>Direkter Draht</h2>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card__ico">☎</div>
+        <h3>Telefon</h3>
+        <p><a href="tel:+4915150690229" style="font-size:1.15rem;font-weight:700;">0151 506 902 29</a></p>
+      </div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card__ico">✉️</div>
+        <h3>E-Mail</h3>
+        <p><a href="mailto:info@burger-sicherheitstechnik.de">info@burger-sicherheitstechnik.de</a></p>
+      </div>
+      <div class="card">
+        <div class="card__ico">📍</div>
+        <h3>Anschrift</h3>
+        <p>Hauptstraße 56<br>82223 Eichenau</p>
+      </div>
+    </div>
+
+    <!-- Kontaktformular -->
+    <div class="reveal">
+      <h2>Nachricht schreiben</h2>
+      <p class="lead" style="margin-bottom:22px;">Beschreiben Sie kurz Ihr Anliegen – ich melde mich zurück.</p>
+      <form action="kontakt.php" method="post" class="card" style="display:grid;gap:14px;">
+        <label>Name*<br><input name="name" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;"></label>
+        <label>E-Mail*<br><input name="email" type="email" required style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;"></label>
+        <label>Telefon<br><input name="telefon" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;"></label>
+        <label>Ihre Nachricht*<br><textarea name="nachricht" required rows="5" style="width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;resize:vertical;"></textarea></label>
+        <label style="display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--ink-soft);">
+          <input type="checkbox" name="datenschutz" required style="margin-top:5px;">
+          <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden.*</span>
+        </label>
+        <!-- Honeypot gegen Spam (für Menschen unsichtbar) -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true">
+        <button type="submit" class="btn btn--primary btn--lg">Nachricht senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><span class="brand__mark">🔒</span> Burger Sicherheitstechnik</div>
+        <p>Tradition im Herzen. Sicherheit Zuhause.<br>Regional verwurzelt. Technisch stark.</p>
+      </div>
+      <div><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="ueber-uns.html">Über uns</a></li><li><a href="leistungen.html">Leistungen</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li>Hauptstraße 56<br>82223 Eichenau</li><li><a href="tel:+4915150690229">0151 506 902 29</a></li><li><a href="mailto:info@burger-sicherheitstechnik.de">info@burger-sicherheitstechnik.de</a></li></ul></div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 Burger Sicherheitstechnik</span>
+      <span><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
