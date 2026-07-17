@@ -443,11 +443,8 @@ p { margin: 0 0 1em; }
 .hero-bar__trust b { color: #fff; display: block; font-size: 1.25rem; }
 
 @media (max-width: 820px) {
-  /* Hochkant-Band + logofreie 4:5-Zuschnitte fürs Handy (Art Direction) */
-  .hero-band { height: auto; aspect-ratio: 4 / 5; max-height: 86vh; }
-  .hero-slider__slide--1 { background-image: url('../img/slider/hero-1-mobile.jpg'); }
-  .hero-slider__slide--2 { background-image: url('../img/slider/hero-2-mobile.jpg'); }
-  .hero-slider__slide--3 { background-image: url('../img/slider/hero-3-mobile.jpg'); }
+  /* Handy: kein Hero-Bild – Seite startet direkt mit dem blauen Abschnitt */
+  .hero-band { display: none; }
   .hero-bar__inner { grid-template-columns: 1fr; gap: 24px; }
   .hero-bar__side { align-items: stretch; }
 }
